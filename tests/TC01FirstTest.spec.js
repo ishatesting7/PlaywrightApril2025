@@ -11,7 +11,7 @@ test.only('Validate the Title of the Page', async({page}) =>{
 
     await expect(page).toHaveTitle(/.*Labs/);
     
-    //page.locator
+    ///page.locator
 
     //const baseURL = "www.google.com";
 

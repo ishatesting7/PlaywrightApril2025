@@ -19,6 +19,10 @@ test('Dropdown Demo', async ({ page }) => {
 
     await dropDownList.selectOption('Sep');
 
+    // const selectedValue1 = await page.$eval(dropDownList, e1 => e1.value);
+
+    // console.log(selectedValue1);
+
     await expect(dropDownList).toHaveValue('9');
 
     // const value = await page.locator('#year').allTextContents();
@@ -30,6 +34,8 @@ test('Dropdown Demo', async ({ page }) => {
     const value2= await page.locator('#year > option').count();
 
     console.log(value2);
+
+
 
     // console.log(value1);
 

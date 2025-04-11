@@ -134,5 +134,15 @@ https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 --> Keyboard Actions
 
+--> Handle Multiple Window + Multiple Tabs
+
 --> Date Pickers
 
+
+Assignment - 11th April 2025
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+- Login In and Logout
+- Under - Admin->Organization->General Information
+- Under - Admin->Organization->Location
+- Under - Admin->Organization->Structure

@@ -146,3 +146,5 @@ https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 - Under - Admin->Organization->General Information
 - Under - Admin->Organization->Location
 - Under - Admin->Organization->Structure
+page.loc('')
+

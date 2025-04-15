@@ -136,6 +136,8 @@ https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 --> Handle Multiple Window + Multiple Tabs
 
+--> waitForLoadState - how to use
+
 --> Date Pickers
 
 

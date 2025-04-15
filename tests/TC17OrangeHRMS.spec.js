@@ -12,6 +12,7 @@ test('test', async ({ page }) => {
   await page.getByRole('listitem').filter({ hasText: 'Organization' }).click();
   await page.getByRole('listitem').filter({ hasText: /^General Information$/ }).click();
 
+  
   const value1 = await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").isDisabled();
   const value2 = await page.locator("(//input[@class='oxd-input oxd-input--active'])[2]").inputValue();
 

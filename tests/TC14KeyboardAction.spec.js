@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
 
 var baseURL = "https://www.bing.com/"
 
-test.only('Keyboard Action', async({page}) =>{
+test('Keyboard Action', async({page}) =>{
 
     await page.goto(baseURL);
 

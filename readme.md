@@ -150,3 +150,6 @@ https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 - Under - Admin->Organization->Structure
 page.loc('')
 
+
+Tags, Groups, Annotations - 
+https://playwright.dev/docs/test-annotations#annotate-tests

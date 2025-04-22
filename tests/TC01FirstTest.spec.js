@@ -5,7 +5,7 @@ Test
 */
 var baseURL = "https://www.saucedemo.com/"
 
-test.only('Validate the Title of the Page', async({page}) =>{
+test('Validate the Title of the Page', async({page}) =>{
 
     await page.goto(baseURL);
 

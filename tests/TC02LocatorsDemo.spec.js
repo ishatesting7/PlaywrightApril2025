@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 
 var baseURL = "https://www.saucedemo.com/"
 
-test.only('Saucelab login', async({page}) =>{
+test('Saucelab login', async({page}) =>{
 
     await page.goto(baseURL);
 

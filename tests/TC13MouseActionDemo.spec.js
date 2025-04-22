@@ -5,7 +5,7 @@ import { test, expect } from '@playwright/test';
 
 var baseURL = "https://jqueryui.com/droppable/"
 
-test.only('Mouse Action login', async({page}) =>{
+test('Mouse Action login', async({page}) =>{
 
     await page.goto(baseURL);
     //Click

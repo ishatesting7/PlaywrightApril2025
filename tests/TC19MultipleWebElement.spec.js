@@ -35,11 +35,7 @@ test('test', async ({ page }) => {
     }
 
     const amount = await page.$$('//div[@id="tbodyid"]//h5')
-
-
     const am = [12, 145, 3343];
-
-
     for(const amt of amount)
     {
         const am = await amt.textContent();
@@ -48,3 +44,10 @@ test('test', async ({ page }) => {
 
 
 });
+
+test('one', async ({ page }) => {
+ 
+    await page.goto('https://www.google.com/');
+    await  page.locator("//textarea[@id='APjFqb']").fill('Playwright Test');
+ 
+ });

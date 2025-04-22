@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('test @regression @smoke ', async ({ page }) => {
   
   
     await page.goto('https://freelance-learn-automation.vercel.app/login');

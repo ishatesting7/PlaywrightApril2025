@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
 
 var baseURL = "https://jqueryui.com/droppable/"
 
-test.only('Iframe Demo', async({page}) =>{
+test('Iframe Demo', async({page}) =>{
 
     await page.goto(baseURL);
 

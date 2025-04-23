@@ -153,3 +153,5 @@ page.loc('')
 
 Tags, Groups, Annotations - 
 https://playwright.dev/docs/test-annotations#annotate-tests
+
+- Function + Set Operation (Union, Intersection)

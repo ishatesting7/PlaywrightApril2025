@@ -155,3 +155,8 @@ Tags, Groups, Annotations -
 https://playwright.dev/docs/test-annotations#annotate-tests
 
 - Function + Set Operation (Union, Intersection)
+
+
+Assignment - 24th April
+
+1. Create function for each collection topic such as Map, Set, List, HashMap, LinkedList, ArrayList, HashTable and try to perform minimum 5 operation under those collection topic

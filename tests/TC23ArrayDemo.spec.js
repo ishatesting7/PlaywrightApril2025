@@ -3,7 +3,6 @@ import { test, expect } from '@playwright/test';
 test.describe('two tests', () => {
 
   
-
   test('Demo 1', async ({ page }) => {
 
    const userDetails = [

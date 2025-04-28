@@ -20,7 +20,7 @@ test('Navigate to Login Page', async({page})=>{
     await page.waitForTimeout(3000);
     await hp.validateLogoutBtn();
     
-    
+
 
 })
 

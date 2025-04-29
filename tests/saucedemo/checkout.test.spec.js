@@ -5,7 +5,7 @@ const InventoryPage = require('../../pages/saucedemo/inventorypage');
 const CartPage = require('../../pages/saucedemo/cartpage');
 const CheckoutPage = require('../../pages/saucedemo/checkoutpage');
 
-test.describe('Checkout Tests', () => {
+test.describe('Checkout Tests', () => { 
   let loginPage;
   let inventoryPage;
   let cartPage;

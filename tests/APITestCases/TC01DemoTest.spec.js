@@ -28,3 +28,12 @@
 //Status Code - https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
 
 //Method - https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods
+
+/*
+
+Develop - All the variable 
+QA - All the variable 
+Stage - All the variable    
+Prod - All the variable
+
+*/

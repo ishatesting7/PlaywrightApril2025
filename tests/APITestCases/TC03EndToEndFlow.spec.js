@@ -28,13 +28,20 @@ test.describe('Complete API Framework', ()=>{
 
     const updateBookingRequest = 
     {
-        "firstname" : "Jimupdate",
-        "lastname" : "Brownupdate"
+        "firstname" : "James",
+        "lastname" : "Brown",
+        "totalprice" : 111,
+        "depositpaid" : true,
+        "bookingdates" : {
+            "checkin" : "2018-01-01",
+            "checkout" : "2019-01-01"
+        },
+        "additionalneeds" : "Breakfast"
     }
 
     test('Auth Token Generation', async({request})=>{
     
-        const response = await request.post(
+        const authresponse = await request.post(
             `${baseURL}/auth`,
             {
             data:bodyData,
@@ -44,17 +51,15 @@ test.describe('Complete API Framework', ()=>{
             },
             timeout:1000
             })
-        const dataV = await response.json();
-        console.log(dataV)
-        tok = dataV.token;
+        const dataVa = await authresponse.json();
+        console.log(dataVa)
+        tok = dataVa.token;
         console.log(tok);
     
-    })
+    
 
-    test('Create Booking', async({request})=>{
-        
-
-        const response = await request.post(
+  
+    const createresponse = await request.post(
             `${baseURL}/booking`,
             {
             data:createBookingRequest,
@@ -63,16 +68,13 @@ test.describe('Complete API Framework', ()=>{
                 'Content-Type':'application/json'
             }
             })
-            const dataV = await response.json();
+            const dataV = await createresponse.json();
             console.log(dataV)
             bookingId = dataV.bookingid;
             console.log(bookingId)
-    })
+   
 
-    test('Update Booking', async({request})=>{
-        
-
-        const response = await request.put(
+        const updateresponse = await request.put(
             `${baseURL}/booking/${bookingId}`,
             {
             data:updateBookingRequest,
@@ -83,9 +85,8 @@ test.describe('Complete API Framework', ()=>{
             }
             })
 
-            console.log(response.status())
+            console.log(updateresponse.status())
 
            
-            
-    })
+        })
 })

@@ -14,6 +14,7 @@ test.describe('Login tests from Excel', () => {
         await page.fill('#username', user.username);
         await page.fill('#password', user.password);
         await page.click('button[type="submit"]');
+        //demo
         await expect(page.locator('#dashboard')).toBeVisible();
 
         data[i].result = 'Pass';

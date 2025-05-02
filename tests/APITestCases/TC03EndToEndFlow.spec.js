@@ -2,6 +2,7 @@ const {test, expect, request} = require('@playwright/test')
 
 test.describe('Complete API Framework', ()=>{
 
+   
 
     let bookingId;
     let tok;
@@ -39,7 +40,7 @@ test.describe('Complete API Framework', ()=>{
         "additionalneeds" : "Breakfast"
     }
 
-    test('Auth Token Generation', async({request})=>{
+    test('Update the Booking ID', async({request})=>{
     
         const authresponse = await request.post(
             `${baseURL}/auth`,
@@ -51,15 +52,13 @@ test.describe('Complete API Framework', ()=>{
             },
             timeout:1000
             })
-        const dataVa = await authresponse.json();
-        console.log(dataVa)
-        tok = dataVa.token;
-        console.log(tok);
+            const dataVa = await authresponse.json();
+            console.log(dataVa)
+            tok = dataVa.token;
+            console.log(tok);
     
-    
-
   
-    const createresponse = await request.post(
+        const createresponse = await request.post(
             `${baseURL}/booking`,
             {
             data:createBookingRequest,
@@ -89,4 +88,39 @@ test.describe('Complete API Framework', ()=>{
 
            
         })
+        test('Create Booking', async({request})=>{
+    
+            const authresponse = await request.post(
+                `${baseURL}/auth`,
+                {
+                data:bodyData,
+                headers:
+                {
+                    'Content-Type':'application/json'
+                },
+                timeout:1000
+                })
+                const dataVa = await authresponse.json();
+                console.log(dataVa)
+                tok = dataVa.token;
+                console.log(tok);
+        
+      
+            const createresponse = await request.post(
+                `${baseURL}/booking`,
+                {
+                data:createBookingRequest,
+                headers:
+                {
+                    'Content-Type':'application/json'
+                }
+                })
+                const dataV = await createresponse.json();
+                console.log(dataV)
+                bookingId = dataV.bookingid;
+                console.log(bookingId)
+       
+            })
+            
+
 })

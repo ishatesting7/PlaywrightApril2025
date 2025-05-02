@@ -7,5 +7,5 @@ class common {
 
     
   }
-  module.exports =  n;
+  module.exports = common;
   

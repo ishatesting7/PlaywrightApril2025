@@ -160,3 +160,57 @@ https://playwright.dev/docs/test-annotations#annotate-tests
 Assignment - 24th April
 
 1. Create function for each collection topic such as Map, Set, List, HashMap, LinkedList, ArrayList, HashTable and try to perform minimum 5 operation under those collection topic
+
+===============================================
+
+Cucumber
+
+Feature File (.feature)
+----------------------
+
+Gherkin Language
+
+Feature     <feature description>
+
+Background:
+
+Given user is navigated to home page
+When user is clicking on login
+Then user is on home page
+
+Scenario outline   <scenario description>
+
+Given user navigated to the url
+When user is entering the cred <username> and <password>
+Then user is clicking on login button
+And user is navigated to home page
+
+Example
+| username | password | 
+| adb      | aasb     |
+| adb      | aasb     |
+| adb      | aasb     |
+| adb      | aasb     |
+
+
+Scenario    <scenario description>
+
+Given user navigated to the url
+When user is entering the cred <username> and <password>
+Then user is clicking on login button
+And user is navigated to home page
+
+
+Step Definition File
+--------------------
+
+@Given
+function("user navigated to the url",()=>{
+
+    define your logic
+    
+})
+
+
+
+

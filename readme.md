@@ -208,9 +208,14 @@ Step Definition File
 function("user navigated to the url",()=>{
 
     define your logic
-    
+
 })
 
+
+Page Object = Page Elements + Page Actions
+Feature - Gherkin
+Steps - 
+Import Page Object
 
 
 

@@ -1,0 +1,40 @@
+Infinity
+Error locator.isEnabled: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('#emai1')
+
+    at /Users/vikasbhandari/Documents/PlaywrightClass/PlaywrightApril2025/tests/assertionDemo.spec.js:11:49 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@9',
+    location: {
+      file: '/Users/vikasbhandari/Documents/PlaywrightClass/PlaywrightApril2025/tests/assertionDemo.spec.js',
+      line: 11,
+      column: 49
+    },
+    category: 'pw:api',
+    title: 'locator.isEnabled(#emai1)',
+    apiName: 'locator.isEnabled',
+    params: { selector: '#emai1', strict: true },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@9'
+    },
+    complete: [Function: complete],
+    endWallTime: 1747842996237,
+    error: {
+      message: 'Error: locator.isEnabled: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('#emai1')\x1B[22m\n",
+      stack: 'Error: locator.isEnabled: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('#emai1')\x1B[22m\n" +
+        '\n' +
+        '    at /Users/vikasbhandari/Documents/PlaywrightClass/PlaywrightApril2025/tests/assertionDemo.spec.js:11:49',
+      cause: undefined
+    }
+  }
+}

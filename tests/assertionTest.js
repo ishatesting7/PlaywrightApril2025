@@ -3,7 +3,6 @@ const { expect } = require('@playwright/test');
 
 module.exports = {
   toBeAttached: async (locator) => await expect(locator).toBeAttached(),
-
   toBeChecked: async (locator) => await expect(locator).toBeChecked(),
   toBeUnChecked: async (locator) => await expect(locator).toBeUnChecked(),
   toBeDisabled: async (locator) => await expect(locator).toBeDisabled(),
